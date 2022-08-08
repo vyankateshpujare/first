@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<body>
+    <div >
+        <button id="start">Start Timer</button>
+    </div>
+    <div id="time">
+    </div>
+    <div >
+        <button id="stop"> Stop Timer</button>
+    </div>
+
+
+</body>
+<script>
+    
+   function getTimeStamp()
+   {
+    const div=document.getElementById("time");
+    div.innerHTML=new Date().toLocaleTimeString();
+   } 
+    let interval=setInterval(getTimeStamp,100);
+
+   const btn2=document.getElementById("stop");
+   btn2.onclick=stopTimer;
+
+   function stopTimer()
+   {
+    clearInterval(interval);
+   }
+</script>
+</html>

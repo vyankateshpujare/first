@@ -1,0 +1,41 @@
+body{
+    background-color: yellow;
+    padding: 0;
+    margin: 0;
+}
+.container,#info
+{
+    
+    padding: 10px 0;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+form,.container,#info
+{
+    color: white;
+    background-color: rgb(91, 90, 88);
+}
+#info
+{
+    padding: 0 0 10px;
+}
+input{
+    margin: 10px 0 20px;
+}
+
+.btn
+{
+    padding: 5px;
+    width: 100px;
+    background-color: yellow;
+    color:rgb(23, 22, 22);
+    border-radius: 5px;
+}
+.btn:hover{
+    border-color: white;
+    color: yellow;
+    background-color: rgb(74, 68, 68);
+}

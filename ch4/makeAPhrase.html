@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeAPhrase</title>
+    <script>
+        function makePhrases() {
+            let words1=["24/7","multi-tier","30000-foot","win-win"];
+             let words2=["empowered","value-added","oriented","focused"];
+             let phrase=new Array();
+             for(let i=0;i<words1.length;i++)
+             {
+               // alert(words1[Math.floor(Math.random()*words1.length)] +" "+ words2[Math.floor(Math.random()*words2.length)]);
+                return `${words1[Math.floor(Math.random()*words1.length)]} ${words2[Math.floor(Math.random()*words1.length)]}`;
+             }
+            
+        }
+        console.log(makePhrases());
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

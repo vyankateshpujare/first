@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Sorting</title>
+    <script>
+
+        let arr=["vyanki","prashant","pradip","dinkar"];
+
+        function sortMethod(arr)      //sort() method of Array.
+        {
+            arr.sort();
+            console.log("Array after sort : "+arr);
+        }
+        sortMethod(arr);
+
+
+
+        function reverseMethod(arr)      //reverse() method of Array.
+        {
+            arr.reverse();
+            console.log("Array Reverse : "+arr);
+        }
+        reverseMethod(arr);
+
+
+
+        function numberSort()       //sorting of numeric array using compare function.
+        {
+            let arr=[67,89,12,666,90,12.4,0.6,100];
+            arr.sort(function(a,b){return a-b});
+            console.log("Number array sorting : "+arr);
+        }
+        numberSort();
+
+
+
+        function sortObjectArray()      //sorting of Array of Objects.
+        {
+            let students=[{name:"prash",age:24},{name:"venky", age:25},{name:"andy",age:23} ];
+            students.sort(function(a,b){return a.age - b.age});
+            console.log("Sorting Array of Objects : ");
+            for(let i=0;i<students.length;i++)
+            {
+                console.log(students[i].name+" "+students[i].age);
+            }
+        }
+        sortObjectArray();
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

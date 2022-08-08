@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Array</title>
+    <script>
+
+       let numbers=[56,78,12,45,23,90];
+
+        function sortArray(numbers)
+        {
+            numbers.forEach((value1,index1)=>
+            {   
+                numbers.forEach((value2,index2)=>
+                {
+                    if(value1<value2)
+                    {
+                        let tempNum=numbers[index1];
+                        numbers[index1]=numbers[index2];
+                        numbers[index2]=tempNum;
+                    }
+                })
+            })
+            console.log(numbers);
+            
+        }
+        sortArray(numbers);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

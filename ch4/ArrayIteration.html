@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Iteration</title>
+    <script>
+
+        const number=[12,45,22,67,45,89];
+
+
+        function forEachMethod(number)
+        {
+            number.forEach(element => 
+                console.log(element)
+            );
+        }
+        forEachMethod(number);
+
+
+
+        function mapMethod(number)
+        {
+            let newArr=number.map(element=>element-1);
+            console.log("Map method : "+newArr);
+        }
+        mapMethod(number);
+
+        
+        function filterMethod(number)
+        {
+            let newArr=number.filter(element => element < 20)
+            console.log("Filter Method : "+newArr);
+        }
+        filterMethod(number);
+
+
+
+        function reduceMethod(number)
+        {
+            let mul=number.reduce(function multi(total,value)
+            {
+                return total * value;
+            });
+            console.log("Reduce Method : "+mul);
+        }
+        reduceMethod(number);
+
+
+
+        function createString()
+        {
+            let num=new Array(100);
+            num.fill("1");
+            console.log(num);
+            let str=num.join("");
+            console.log("String is : "+str);
+            console.log("length is : "+str.length);
+
+            
+        }
+        createString();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

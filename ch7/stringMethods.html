@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+    <script>
+        let string="ValueAdd Softech and Solutions";
+        console.log("String : "+string);
+        function stringLength()
+        {
+            console.log("Length of String : "+string.length);
+        }
+        stringLength();
+
+        function stringSlice()
+        {
+            console.log("Slice(start,end) : "+string.slice(5,10));
+        }
+        stringSlice();
+
+        function stringSubstring()
+        {
+            console.log("Substring(start,end) : "+string.substring(5,20));
+        }
+        stringSubstring();
+
+        function stringSubstr()
+        {
+            console.log("Substr(start,length) : "+string.substr(2,12));
+        }
+        stringSubstr();
+
+        function stringReplace()
+        {
+            console.log("replace(old,new) : "+string.replace("Solutions","Service"));
+        }
+        stringReplace();
+
+        function stringConcat()
+        {
+            console.log("string1.concat(string2) : "+string.concat("...Pune"));
+        }
+        stringConcat();
+
+        function stringTrim()
+        {
+            let string2="   Hello world !";
+            console.log("String Before trim : "+string2);
+            console.log("String After trim : "+string2.trim());
+        }
+        stringTrim();
+
+        function stringCharAt()
+        {
+            console.log("charAt(index) : "+string.charAt(5));
+        }
+        stringCharAt();
+
+        function stringCharCodeAt()
+        {
+            console.log("charCodeAt(index) : "+string.charCodeAt(5));
+        }
+        stringCharCodeAt();
+
+        function stringSplit()
+        {
+            console.log("split() : "+string.split(" "));
+        }
+        stringSplit();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

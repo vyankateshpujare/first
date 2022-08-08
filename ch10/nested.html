@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Function</title>
+    <script>
+        let justAVar = "Oh, don't you worry about it, I'mGLOBAL";
+        function whereAreYou() {
+            let justAVar = "Just an every day LOCAL";
+            function inner() {
+                return justAVar;
+            }
+            // return inner();
+            return inner;
+        }
+        let result = whereAreYou();
+        console.log(typeof(result));
+        // console.log(result);
+        console.log(result());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

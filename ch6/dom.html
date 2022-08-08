@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .blue
+        {
+            color: blue;
+        }
+       .red
+       {
+        color: red;
+       } 
+    </style>
+    
+</head>
+<body>
+    <p id="code1">The eagle is in the</p>
+    <p id="code2">The fox is in the</p>
+    <p id="code3">snuck into the garden last night.</p>
+    <p id="code4">They said it would rain</p>
+    <p id="code5">Does the red robin crow at</p>
+    <p id="code6">Where can I find Mr.</p>
+    <p id="code7">I told the boys to bring tea and</p>
+    <p id="code8">Where's my dough? The cake won't</p>
+    <p id="code9">My watch stopped at</p>
+    <p id="code10">barking, can't fly without umbrella.</p>
+    <p id="code11">The green canary flies at</p>
+    <p id="code12">The oyster owns a fine</p>
+
+    <input type="button" value="Click Here" onclick="">
+
+    <script>
+      let pCode9=document.getElementById("code9");
+      pCode9.setAttribute("class","blue")
+        setTimeout(setColor,2000);
+
+        function setColor()
+        {
+        // pCode9.setAttribute("class","red");
+        pCode9.removeAttribute("class");
+        // setTimeout(function(){
+        //     pCode9.removeAttribute("class");
+        // },2000)
+        }
+        
+    </script>
+</body>
+</html>

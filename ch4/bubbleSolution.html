@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Solution</title>
+    <script>
+                      
+       
+        function  bubbleSolution()
+        {
+         let scores = [60, 50, 60, 58, 54, 54,
+                      58, 50, 52, 54, 48, 69,
+                      34, 55, 51, 52, 44, 51,
+                      69, 64, 66, 55, 52, 61,
+                      46, 31, 57, 52, 44, 18,
+                      41, 53, 55, 61, 51, 44];
+
+         let costs = [.25, .27, .25, .25, .25, .25,
+                     .33, .31, .25, .29, .27, .22,
+                     .31, .25, .25, .33, .21, .25,
+                     .25, .25, .28, .25, .24, .22,
+                     .20, .25, .30, .25, .24, .25,
+                     .25, .25, .27, .25, .26, .29];
+                    
+                    
+         let maxScore=0;
+        let lowCost=Number.MAX_VALUE;
+        let lowCostIndex=0;
+        let maxScoreIndex=new Array();
+
+        for (let i = 0; i < scores.length; i = i + 1) {
+           output = "Bubble solution #" + i + " score: " +
+           scores[i];
+           console.log(output);
+           if(maxScore<scores[i])
+           { 
+            maxScore=scores[i];
+            // while(maxScoreIndex.length)
+            // {
+            //     maxScoreIndex.pop;
+            // }
+            //maxScoreIndex.push(i);
+
+            if(costs[i]<lowCost)
+            {
+                lowCost=costs[i];
+                lowCostIndex=i;
+            }
+           }
+        //    else if(scores[i]==maxScore)
+        //    {
+        //     maxScoreIndex.push(i);
+        //    }
+          
+        }
+    
+        console.log("Max score "+ maxScore);
+        console.log("MAx score indexes ");
+        for (let i = 0; i < scores.length; i = i + 1)
+        {
+            if(scores[i]==maxScore)
+            {
+                console.log(" "+i);
+            }
+        }
+        console.log("solution with optimum cost index "+lowCost,lowCostIndex);
+        console.log("Total number of bubble score is "+scores.length);
+
+        }
+       
+        bubbleSolution();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
